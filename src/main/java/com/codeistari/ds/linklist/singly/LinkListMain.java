@@ -1,4 +1,4 @@
-package com.codeistari.ds.linklist;
+package com.codeistari.ds.linklist.singly;
 
 public class LinkListMain {
 
@@ -38,8 +38,4 @@ public class LinkListMain {
 
     System.out.println(list.getPosition(50));
   }
-
-
-
-
 }

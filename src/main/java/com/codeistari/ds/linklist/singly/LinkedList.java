@@ -1,4 +1,4 @@
-package com.codeistari.ds.linklist;
+package com.codeistari.ds.linklist.singly;
 
 public class LinkedList<T> {
 
@@ -191,9 +191,12 @@ public class LinkedList<T> {
       position++;
       node = node.getNext();
     }
-
     return -1;
   }
 
+  public void clearList() {
+    head = null;
+    length = 0;
+  }
 
 }

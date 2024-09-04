@@ -1,4 +1,4 @@
-package com.codeistari.ds.linklist;
+package com.codeistari.ds.linklist.singly;
 
 import java.util.Objects;
 import lombok.Data;
