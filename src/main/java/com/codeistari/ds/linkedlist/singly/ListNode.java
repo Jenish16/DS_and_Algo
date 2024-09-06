@@ -1,18 +1,16 @@
-package com.codeistari.ds.linklist.doubly;
+package com.codeistari.ds.linkedlist.singly;
 
 import java.util.Objects;
 import lombok.Data;
 
 @Data
-public class DLLNode<T> {
+public class ListNode<T> {
 
   private T data;
-  private DLLNode prev;
-  private DLLNode next;
+  private ListNode next;
 
-  public DLLNode(T data) {
+  public ListNode(T data) {
     this.data = data;
-    this.prev = null;
     this.next = null;
   }
 
@@ -24,7 +22,7 @@ public class DLLNode<T> {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    DLLNode<?> listNode = (DLLNode<?>) o;
+    ListNode<?> listNode = (ListNode<?>) o;
     return Objects.equals(data, listNode.data);
   }
 }

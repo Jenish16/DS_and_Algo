@@ -1,15 +1,15 @@
-package com.codeistari.ds.linklist.singly;
+package com.codeistari.ds.stack.linkedlist;
 
 import java.util.Objects;
 import lombok.Data;
 
 @Data
-public class ListNode<T> {
+public class StackNode<T> {
 
   private T data;
-  private ListNode next;
+  private StackNode next;
 
-  public ListNode(T data) {
+  public StackNode(T data) {
     this.data = data;
     this.next = null;
   }
@@ -22,7 +22,7 @@ public class ListNode<T> {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    ListNode<?> listNode = (ListNode<?>) o;
+    StackNode<?> listNode = (StackNode<?>) o;
     return Objects.equals(data, listNode.data);
   }
 }

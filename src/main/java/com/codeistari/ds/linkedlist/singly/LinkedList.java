@@ -1,4 +1,4 @@
-package com.codeistari.ds.linklist.singly;
+package com.codeistari.ds.linkedlist.singly;
 
 public class LinkedList<T> {
 

@@ -1,6 +1,4 @@
-package com.codeistari.ds.linklist.doubly;
-
-import com.codeistari.ds.linklist.singly.ListNode;
+package com.codeistari.ds.linkedlist.doubly;
 
 public class DoublyLinkedList<T> {
 

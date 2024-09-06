@@ -1,52 +1,41 @@
-package com.codeistari.ds.linklist.doubly;
+package com.codeistari.ds.linkedlist.singly;
 
-public class DoublyLinkListMain {
+public class LinkListMain {
 
   public static void main(String[] args) {
-    DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
+    LinkedList<Integer> list = new LinkedList<>();
     list.insertAtBegin(10);
     list.printList();
-    list.printRevertList();
 
     list.insertAtEnd(20);
     list.printList();
-    list.printRevertList();
 
     list.insert(15,1);
     list.printList();
-    list.printRevertList();
 
     list.insertAtEnd(-50);
     list.printList();
-    list.printRevertList();
 
     list.insert(15,99);
     list.printList();
-    list.printRevertList();
 
-    System.out.println(list.getPosition(20));
+    System.out.println(list.getPosition(15));
 
     list.removeFromBegin();
     list.printList();
-    list.printRevertList();
 
     list.removeFromEnd();
     list.printList();
-    list.printRevertList();
 
-    list.removeMatched(new DLLNode<>(20));
+    list.removeMatched(new ListNode<>(20));
     list.printList();
-    list.printRevertList();
 
     list.insertAtEnd(20);
     list.printList();
-    list.printRevertList();
 
     list.remove(1);
     list.printList();
-    list.printRevertList();
 
     System.out.println(list.getPosition(50));
-   
   }
 }
